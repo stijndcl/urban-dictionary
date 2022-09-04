@@ -4,7 +4,7 @@ from setuptools import setup
 
 here = pathlib.Path(__file__).parent
 
-dependencies = ["aiohttp==3.8.1", "click==8.1.3"]
+dependencies = ["aiohttp==3.8.1"]
 
 
 def get_version():
