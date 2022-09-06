@@ -1,4 +1,7 @@
+import asyncio
 import sys
+
+from urban_dictionary import app
 
 __all__ = ["main"]
 
@@ -8,4 +11,5 @@ def main(argv=None):
     if argv is None:
         argv = sys.argv[1:]
 
-    print(argv)
+    term = app.parse_arg(argv)
+    asyncio.run(app.main(term))

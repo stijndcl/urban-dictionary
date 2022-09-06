@@ -15,10 +15,17 @@ version = "0.1.0"
 description = "CLI tool to get Urban Dictionary definitions"
 authors = ["stijndcl"]
 license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/stijndcl/urban-dictionary"
+repositry = "https://github.com/stijndcl/urban-dictionary"
+packages = [
+    {include = "urban_dictionary"}
+]
 
 [tool.poetry.dependencies]
 python = "^3.9.5"
 aiohttp = "^3.8.1"
+dacite = "^1.6.0"
 
 [tool.poetry.dev-dependencies]
 black = "^22.8.0"
@@ -31,6 +38,12 @@ flake8-eradicate = "^1.3.0"
 flake8-isort = "^4.2.0"
 flake8-simplify = "^0.19.3"
 mypy = "^0.971"
+
+[tool.poetry.scripts]
+urban-dictionary = "urban_dictionary:main"
+
+[tool.poetry.urls]
+issues = "https://github.com/stijndcl/urban-dictionary/issues"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

@@ -178,6 +178,17 @@ terminals = ["psutil (>=5.8.0)"]
 all = ["pytest-regressions (>=2.0.2)", "pytest (>=6.0.0)", "psutil (>=5.8.0)", "coincidence (>=0.1.0)"]
 
 [[package]]
+name = "dacite"
+version = "1.6.0"
+description = "Simple creation of data classes from dictionaries."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+dev = ["pylint", "mypy", "black", "coveralls", "pytest-cov", "pytest (>=5)"]
+
+[[package]]
 name = "deprecation"
 version = "2.1.0"
 description = "A library to handle automated deprecations"
@@ -599,7 +610,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9.5"
-content-hash = "b34379bdf4053e5c8210af57fe8e0d933ef0457f5b6cdee000a54ff3aadf26d3"
+content-hash = "024cfb12a4519e1237aca4f48ce42329086c4f992447818189efb105d6a180a2"
 
 [metadata.files]
 aiohttp = [
@@ -697,6 +708,7 @@ click = [
 ]
 colorama = []
 consolekit = []
+dacite = []
 deprecation = []
 deprecation-alias = []
 domdf-python-tools = []
